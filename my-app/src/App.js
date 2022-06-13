@@ -1,25 +1,15 @@
-import logo from './logo.svg';
+import weddingLogo2 from './weddingLogo2.png';
 import './App.css';
+import { Link } from 'react-router-dom';
 
-function App() {
+
+export default function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <img src={weddingLogo2} className="wedding-logo" alt="weddinglogo" height='50%' />
+        <Link to="pages/weddingInfo">Come celebrate the marriage of Russell and Grace</Link>
       </header>
     </div>
   );
 }
-
-export default App;
