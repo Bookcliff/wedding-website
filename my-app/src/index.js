@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import WeddingInfo from './pages/weddingInfo';
 import Rsvp from './pages/rsvp';
-import Donations from './pages/donations';
+import Registry from './pages/registry';
 import Nft from './pages/nft';
 import reportWebVitals from './reportWebVitals';
 import {
@@ -17,17 +17,18 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
     <React.StrictMode>
+      {/* <Layout style={{ minHeight: "100vh", padding: 24}}> */}
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/pages/weddingInfo" element={<WeddingInfo />} >
-          <Route path="rsvp" element={<Rsvp />} />
-          <Route path="donations" element={<Donations />} />
-          <Route path="nft" element={<Nft />} />
-        </Route>
+        <Route path="/pages/weddingInfo" element={<WeddingInfo />} />
+        <Route path="rsvp" element={<Rsvp />} />
+        <Route path="registry" element={<Registry />} />
+        <Route path="nft" element={<Nft />} />
         <Route path="*" element={<>page does not exist</>} />
       </Routes>
+      {/* </Layout> */}
     </React.StrictMode>
-  </BrowserRouter>
+  </BrowserRouter >
 );
 
 // If you want to start measuring performance in your app, pass a function

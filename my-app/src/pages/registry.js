@@ -4,12 +4,12 @@ import MainHeader from './header';
 
 const { Content, Footer } = Layout;
 
-export default function Nft() {
+export default function Registry() {
     return (
         <Layout>
             <MainHeader />
             <Content>
-                NFT Information
+                Registry
             </Content>
             <Footer>
 
