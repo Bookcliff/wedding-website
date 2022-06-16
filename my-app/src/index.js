@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import WeddingInfo from './pages/weddingInfo';
 import Rsvp from './pages/rsvp';
+import Party from './pages/party';
 import Registry from './pages/registry';
 import Nft from './pages/nft';
 import reportWebVitals from './reportWebVitals';
@@ -22,6 +23,7 @@ root.render(
         <Route path="/" element={<App />} />
         <Route path="/pages/weddingInfo" element={<WeddingInfo />} />
         <Route path="rsvp" element={<Rsvp />} />
+        <Route path="party" element={<Party />} />
         <Route path="registry" element={<Registry />} />
         <Route path="nft" element={<Nft />} />
         <Route path="*" element={<>page does not exist</>} />

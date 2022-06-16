@@ -43,5 +43,38 @@
 
 .weddingDate {
   text-align: center;
-  font-size: 25vh;
+  font-size: 15vw;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgDiv {
+  height: 45vh;
+  width: 35vh;
+  display: flex;
+  vertical-align: middle;
+  justify-content: center;
+}
+
+.carouselImg {
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 45px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.bottom-center {
+  position: absolute;
+  top: 0px;
+  left: 16px;
 }
