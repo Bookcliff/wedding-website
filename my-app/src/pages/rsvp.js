@@ -7,7 +7,6 @@ const { Content, Footer } = Layout;
 export default function Rsvp() {
     return (
         <Layout>
-            <MainHeader />
             <Content>
                 RSVP
             </Content>

@@ -25,7 +25,6 @@ const faq = [
 export default function WeddingInfo() {
     return (
         <Layout>
-            <MainHeader />
             <Content>
                 <Row>
                     <Col xs={0} sm={4}></Col>
@@ -89,6 +88,7 @@ export default function WeddingInfo() {
                     Footer
                 </Row>
             </Footer>
+
         </Layout >
     )
 }

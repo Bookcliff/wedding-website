@@ -7,7 +7,6 @@ const { Content, Footer } = Layout;
 export default function Nft() {
     return (
         <Layout>
-            <MainHeader />
             <Content>
                 NFT Information
             </Content>

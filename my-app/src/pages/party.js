@@ -7,7 +7,6 @@ const { Content, Footer } = Layout;
 export default function Party() {
     return (
         <Layout>
-            <MainHeader />
             <Content>
                 Wedding Party Information
             </Content>

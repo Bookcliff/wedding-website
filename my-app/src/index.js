@@ -13,22 +13,27 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+import { Layout } from 'antd';
+import MainHeader from './pages/header';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
     <React.StrictMode>
-      {/* <Layout style={{ minHeight: "100vh", padding: 24}}> */}
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/pages/weddingInfo" element={<WeddingInfo />} />
-        <Route path="rsvp" element={<Rsvp />} />
-        <Route path="party" element={<Party />} />
-        <Route path="registry" element={<Registry />} />
-        <Route path="nft" element={<Nft />} />
-        <Route path="*" element={<>page does not exist</>} />
       </Routes>
-      {/* </Layout> */}
+      <Layout style={{ minHeight: "100vh" }}>
+        <MainHeader />
+        <Routes>
+          <Route path="/pages/weddingInfo" element={<WeddingInfo />} />
+          <Route path="rsvp" element={<Rsvp />} />
+          <Route path="party" element={<Party />} />
+          <Route path="registry" element={<Registry />} />
+          <Route path="nft" element={<Nft />} />
+          <Route path="*" element={<>page does not exist</>} />
+        </Routes>
+      </Layout>
     </React.StrictMode>
   </BrowserRouter >
 );

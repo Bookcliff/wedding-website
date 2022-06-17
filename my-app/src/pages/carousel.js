@@ -13,7 +13,7 @@ import sept2020 from '../pictures/sept2020.jpeg';
 const contentStyle = {
     height: '50vh',
     color: '#fff',
-    background: 'rgba(234,224,220, 0.4)',
+    background: 'rgb(234,224,220)',
 };
 
 export default function PhotoCarousel() {

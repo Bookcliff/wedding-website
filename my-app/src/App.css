@@ -66,7 +66,7 @@
   width: auto;
   height: auto;
   position: absolute;
-  top: 45px;
+  top: 50px;
   bottom: 0;
   left: 0;
   right: 0;
@@ -76,5 +76,21 @@
 .bottom-center {
   position: absolute;
   top: 0px;
-  left: 16px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.mainHeader {
+  height: 25vh;
+  justify-content: space-between;
+}
+
+.headerLogo {
+  position: relative;
+  height: 25vh;
+}
+
+.navMenu {
+  margin-top: 5vh;
+  text-align: left;
 }

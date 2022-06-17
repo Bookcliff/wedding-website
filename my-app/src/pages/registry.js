@@ -7,7 +7,6 @@ const { Content, Footer } = Layout;
 export default function Registry() {
     return (
         <Layout>
-            <MainHeader />
             <Content>
                 Registry
             </Content>
