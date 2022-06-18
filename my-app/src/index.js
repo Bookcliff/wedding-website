@@ -14,7 +14,8 @@ import {
   Route,
 } from "react-router-dom";
 import { Layout } from 'antd';
-import MainHeader from './pages/header';
+import MainHeader from './components/header';
+import MainFooter from './components/footer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -33,6 +34,7 @@ root.render(
           <Route path="nft" element={<Nft />} />
           <Route path="*" element={<>page does not exist</>} />
         </Routes>
+        <MainFooter />
       </Layout>
     </React.StrictMode>
   </BrowserRouter >
