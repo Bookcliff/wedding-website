@@ -78,6 +78,7 @@ export default function PhotoCarousel() {
                 </div>
             </div>
         </Carousel >
+
     );
 };
 

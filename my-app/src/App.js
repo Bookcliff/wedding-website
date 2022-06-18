@@ -1,5 +1,5 @@
 import weddingLogo2 from './weddingLogo2.png';
-import './App.css';
+import './App.less';
 import { Link } from 'react-router-dom';
 
 

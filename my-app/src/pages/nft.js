@@ -1,8 +1,7 @@
 import { Layout } from 'antd';
 import React from 'react';
-import MainHeader from './header';
 
-const { Content, Footer } = Layout;
+const { Content } = Layout;
 
 export default function Nft() {
     return (
@@ -10,9 +9,6 @@ export default function Nft() {
             <Content>
                 NFT Information
             </Content>
-            <Footer>
-
-            </Footer>
         </Layout>
     )
 }
