@@ -1,6 +1,7 @@
-import { Layout, Col, Row, List, Space, Typography } from 'antd';
+import { Layout, Col, Row, List, Space, Typography, Divider } from 'antd';
 import React from 'react';
 import PhotoCarousel from '../components/carousel';
+import leafBorder from '../pictures/leafBorder.png';
 
 
 const { Content } = Layout;
@@ -49,7 +50,7 @@ export default function WeddingInfo() {
                             <div>
                                 <List
                                     size="large"
-                                    header={<Title className="listHeader" level={4}>Details</Title>}
+                                    header={<><Title className="listHeader" level={4}>Details</Title> <Divider /></>}
                                     bordered
                                     dataSource={details}
                                     renderItem={(item) => (
@@ -70,7 +71,12 @@ export default function WeddingInfo() {
                                 <List
                                     size="large"
                                     bordered
-                                    header={<Title className="listHeader" level={4} >Frequently Asked Questions</Title>}
+                                    header={
+                                        <><Title className="listHeader" level={4} >Frequently Asked Questions</Title>
+                                            <Divider />
+                                            <img src={leafBorder} alt='leaf border' className='imgBorder' />
+                                        </>
+                                    }
                                     dataSource={faq}
                                     renderItem={(item) => (
                                         <List.Item>
