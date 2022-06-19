@@ -21,18 +21,15 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
     <React.StrictMode>
-      <Routes>
-        <Route path="/" element={<App />} />
-      </Routes>
       <Layout style={{ minHeight: "100vh" }}>
-        <MainHeader />
         <Routes>
-          <Route path="/pages/weddingInfo" element={<WeddingInfo />} />
-          <Route path="rsvp" element={<Rsvp />} />
-          <Route path="party" element={<Party />} />
-          <Route path="registry" element={<Registry />} />
-          <Route path="nft" element={<Nft />} />
-          <Route path="*" element={<>page does not exist</>} />
+          <Route path="/" element={<App />} />
+          <Route path="/pages/weddingInfo" element={<><MainHeader /><WeddingInfo /></>} />
+          <Route path="/rsvp" element={<><MainHeader /><Rsvp /></>} />
+          <Route path="/party" element={<><MainHeader /><Party /></>} />
+          <Route path="/registry" element={<><MainHeader /><Registry /></>} />
+          <Route path="/nft" element={<><MainHeader /><Nft /></>} />
+          <Route path="*" element={<><MainHeader /><>page does not exist</></>} />
         </Routes>
         <MainFooter />
       </Layout>
@@ -44,3 +41,4 @@ root.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
