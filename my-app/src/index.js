@@ -24,14 +24,13 @@ root.render(
       <Layout style={{ minHeight: "100vh" }}>
         <Routes>
           <Route path="/" element={<App />} />
-          <Route path="/pages/weddingInfo" element={<><MainHeader /><WeddingInfo /></>} />
-          <Route path="/rsvp" element={<><MainHeader /><Rsvp /></>} />
-          <Route path="/party" element={<><MainHeader /><Party /></>} />
-          <Route path="/registry" element={<><MainHeader /><Registry /></>} />
-          <Route path="/nft" element={<><MainHeader /><Nft /></>} />
-          <Route path="*" element={<><MainHeader /><>page does not exist</></>} />
+          <Route path="/pages/weddingInfo" element={<><MainHeader /><WeddingInfo /><MainFooter /></>} />
+          <Route path="/rsvp" element={<><MainHeader /><Rsvp /><MainFooter /></>} />
+          <Route path="/party" element={<><MainHeader /><Party /><MainFooter /></>} />
+          <Route path="/registry" element={<><MainHeader /><Registry /><MainFooter /></>} />
+          <Route path="/nft" element={<><MainHeader /><Nft /><MainFooter /></>} />
+          <Route path="*" element={<><MainHeader /><>page does not exist</><MainFooter /></>} />
         </Routes>
-        <MainFooter />
       </Layout>
     </React.StrictMode>
   </BrowserRouter >

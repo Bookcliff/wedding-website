@@ -28,6 +28,9 @@ export default function WeddingInfo() {
         <Layout>
             <Content>
                 <Space direction="vertical" size="middle" style={{ display: 'flex' }}>
+                    <Row align="top" justify='center' className='leafContainer'>
+                        <Col span={24}><img src={leafBorder} alt='leaf border' className='imgBorder' /> </Col>
+                    </Row>
                     <Row>
                         <Col xs={0} sm={4}></Col>
                         <Col xs={24} sm={16}>
@@ -50,7 +53,16 @@ export default function WeddingInfo() {
                             <div>
                                 <List
                                     size="large"
-                                    header={<><Title className="listHeader" level={4}>Details</Title> <Divider /></>}
+                                    header={
+                                        <><Row className="listContainer">
+                                            <Col span={24}><Title className="listHeader" level={4} >Details</Title></Col></Row>
+                                            <Row>
+                                                <Col span={24}><Divider /></Col></Row>
+                                            <Row align="top" justify='center' className='borderContainer'>
+                                                <Col span={24}><img src={leafBorder} alt='leaf border' className='leafBorder' /> </Col>
+                                            </Row>
+                                        </>
+                                    }
                                     bordered
                                     dataSource={details}
                                     renderItem={(item) => (
@@ -72,9 +84,13 @@ export default function WeddingInfo() {
                                     size="large"
                                     bordered
                                     header={
-                                        <><Title className="listHeader" level={4} >Frequently Asked Questions</Title>
-                                            <Divider />
-                                            <img src={leafBorder} alt='leaf border' className='imgBorder' />
+                                        <><Row className="listContainer">
+                                            <Col span={24}><Title className="listHeader" level={4} >Frequently Asked Questions</Title></Col></Row>
+                                            <Row>
+                                                <Col span={24}><Divider /></Col></Row>
+                                            <Row align="top" justify='center' className='borderContainer'>
+                                                <Col span={24}><img src={leafBorder} alt='leaf border' className='leafBorder' /> </Col>
+                                            </Row>
                                         </>
                                     }
                                     dataSource={faq}
@@ -91,7 +107,7 @@ export default function WeddingInfo() {
                         <Col xs={0} sm={4}></Col>
                     </Row>
                 </Space>
-            </Content>
+            </Content >
         </Layout >
     )
 }
