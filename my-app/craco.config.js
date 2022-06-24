@@ -15,7 +15,8 @@ module.exports = {
                             '@layout-header-color': '@text-color',
                             '@layout-footer-background': '@layout-header-background',
                             '@menu-bg': '#cacbca',
-                            '@divider-color': 'rgb(234,224,220)'
+                            '@divider-color': 'rgb(234,224,220)',
+                            '@font-family': 'Arimo',
 
                         },
                         javascriptEnabled: true,

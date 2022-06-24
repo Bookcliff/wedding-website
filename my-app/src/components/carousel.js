@@ -16,6 +16,9 @@ import aug2021 from '../pictures/aug2021.jpg';
 import sept2021 from '../pictures/sept2021.jpg';
 import jan2022 from '../pictures/jan2022.jpeg';
 import apr2022 from '../pictures/apr2022.jpg';
+import june2022mx from '../pictures/june2022-mx.jpg';
+import june2022mx2 from '../pictures/june2022-mx2.jpeg';
+import june2022 from '../pictures/june2022.jpeg';
 
 
 const contentStyle = {
@@ -125,6 +128,24 @@ export default function PhotoCarousel() {
                 <h3 className='bottom-center'>April 2022</h3>
                 <div className='imgDiv'>
                     <img className='carouselImg' src={apr2022} alt="apr2022" />
+                </div>
+            </div>
+            <div className="container">
+                <h3 className='bottom-center'>June 2022</h3>
+                <div className='imgDiv'>
+                    <img className='carouselImg' src={june2022mx} alt="june2022mx" />
+                </div>
+            </div>
+            <div className="container">
+                <h3 className='bottom-center'>June 2022</h3>
+                <div className='imgDiv'>
+                    <img className='carouselImg' src={june2022mx2} alt="june2022mx2" />
+                </div>
+            </div>
+            <div className="container">
+                <h3 className='bottom-center'>June 2022</h3>
+                <div className='imgDiv'>
+                    <img className='carouselImg' src={june2022} alt="june2022" />
                 </div>
             </div>
         </Carousel >
