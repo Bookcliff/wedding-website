@@ -2,7 +2,6 @@ import { Carousel } from 'antd';
 import React from 'react';
 import jan2015 from '../pictures/jan2015.jpeg';
 import oct2015 from '../pictures/oct2015.jpeg';
-import feb2016 from '../pictures/feb2016.jpeg';
 import aug2016 from '../pictures/aug2016.jpeg';
 import dec2017 from '../pictures/dec2017.jpeg';
 import apr2018 from '../pictures/apr2018.jpeg';
@@ -22,7 +21,7 @@ import june2022 from '../pictures/june2022.jpeg';
 
 
 const contentStyle = {
-    height: '50vh',
+    height: '90vh',
     color: '#fff',
     background: 'rgb(234,224,220)',
 };
@@ -44,12 +43,6 @@ export default function PhotoCarousel() {
                 <h3 className='bottom-center' >October 2015</h3>
                 <div className='imgDiv'>
                     <img className='carouselImg' src={oct2015} alt="oct2015" />
-                </div>
-            </div>
-            <div className="container">
-                <h3 className='bottom-center' >February 2016</h3>
-                <div className='imgDiv'>
-                    <img className='carouselImg' src={feb2016} alt="feb2016" />
                 </div>
             </div>
             <div className="container">

@@ -1,7 +1,7 @@
-import largeWeddingLogo from './pictures/largeWeddingLogo.png';
-import './App.less';
 import { Link } from 'react-router-dom';
 import { Button } from 'antd';
+import largeWeddingLogo from './pictures/largeWeddingLogo.png';
+import './App.less';
 
 
 export default function App() {

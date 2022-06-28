@@ -12,7 +12,7 @@ const DayCountdown = () => {
     return (
         <>
             <Row>
-                <Col><Countdown value={deadline} format="D " onFinish={onFinish} style={{ paddingRight: '20px', fontSize: '100px', fontStyle: 'italic' }} /></Col>
+                <Col><Countdown value={deadline} format="D " onFinish={onFinish} style={{ paddingRight: '20px', fontStyle: 'italic' }} /></Col>
                 <Col><Title level={3}>Days left</Title></Col>
             </Row></>
     );
