@@ -18,11 +18,11 @@ const NavMenu = () => {
     const [current, setCurrent] = useState('weddingInfo');
 
     const onClick = (e) => {
-        console.log(e);
+        // console.log(e);
         setCurrent(e.key);
     };
 
-    console.log(current);
+    // console.log(current);
 
     return <Menu onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items} className="navMenu" />
 
