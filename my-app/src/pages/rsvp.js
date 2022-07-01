@@ -1,4 +1,4 @@
-import { Layout, Row, Col, Card, Typography } from 'antd';
+import { Layout, Row, Col, Typography } from 'antd';
 import React from 'react';
 import leafBorder from '../pictures/leafBorder.png';
 import largeWeddingLogo from '../pictures/largeWeddingLogo.png'
