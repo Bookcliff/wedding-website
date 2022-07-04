@@ -2,6 +2,7 @@ import { Layout, Row, Col, Typography } from 'antd';
 import React from 'react';
 import leafBorder from '../pictures/leafBorder.png';
 import largeWeddingLogo from '../pictures/largeWeddingLogo.png'
+import RsvpForm from '../components/rsvpForm';
 
 const { Content } = Layout;
 
@@ -34,7 +35,13 @@ export default function Rsvp() {
                         </Row>
                         <Row>
                             <Col span={24} align='center'>
-                                <Title level={2} className='rsvpFont'>Join Russell & Grace in a celebration of their marriage.</Title>                    </Col>
+                                <Title level={2} className='rsvpFont'>Join Russell & Grace in a celebration of their marriage.</Title>
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col span={24} align='center'>
+                                <RsvpForm />
+                            </Col>
                         </Row>
                     </Col>
                     <Col xs={0} sm={6}></Col>
