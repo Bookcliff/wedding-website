@@ -1,10 +1,9 @@
-import { connectToDatabase } from "../lib/connectToDatabase";
+import { connectToDatabase } from "../../lib/connectToDatabase";
 
 //This function is to populate the RSVP form w/guest names, partner, and RSVP status. Combine into one function (if... elseif)
 
 export default async function guestListApi(req, res) {
-    if (req.method == "GET") {
-
+    if (req.method === "GET") {
         const db = await connectToDatabase();
         const collection = await db.collection('guestList');
 
@@ -13,18 +12,22 @@ export default async function guestListApi(req, res) {
         // const guests = await collection.insertOne({name: "test", couple: "true", partner: "test2", rsvp: "false"})
 
         res.status(200).json({ data: guests });
-    } else if (req.method == "PUT") {
+    } 
+    
+    else if (req.method === "POST") {
+        const newGuest = req.body;
 
         const db = await connectToDatabase();
         const collection = await db.collection('guestList');
 
-        const rsvp = () => {
-            await collection.updateOne({ _id: guests.id }, { $set: { 'rsvp': true }, $set: { 'rsvpStatus': true } })
-        };
+        const guests = await collection.insertOne(newGuest);
 
-        res.status(200).json({ data: guests });
-    } else {
-        res.status(404).json({ status: "ERROR: ROUTE NOT FOUND" })
+        res.status(200).json({guests});
+
+    }
+
+    else {
+        res.status(405).json({ status: "ERROR: ROUTE NOT FOUND" })
     }
 }
 

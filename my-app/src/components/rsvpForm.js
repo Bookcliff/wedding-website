@@ -8,10 +8,11 @@ const CreateRsvpForm = ({ visible, onCreate, onCancel }) => {
     useEffect(() => {
         const getGuestList = async () => {
             // const guestList = await fetch('/api/index');
-            const guestList = await fetch('/api/index/{id}');
+            const guestList = await fetch('/api/guests/');
 
             const guests = await guestList.json();
             console.log(guests)
+            // eslint-disable-next-line array-callback-return
             const guestData = guests.data.map((guest) => {
                 if (guest.rsvp === false) {
                     return (guest.name);
