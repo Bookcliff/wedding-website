@@ -1,5 +1,17 @@
-import { Button, Form, Modal, Radio, Select } from "antd";
+import {
+  Button,
+  Form,
+  Modal,
+  Radio,
+  Select,
+  Typography,
+  Divider,
+  Drawer,
+} from "antd";
 import { useEffect, useState } from "react";
+import ChipotleOrderForm from "./chipotleOrderForm";
+
+const { Title } = Typography;
 
 const { Option } = Select;
 
@@ -7,6 +19,8 @@ const CreateRsvpForm = ({ visible, onCreate, onCancel }) => {
   const [currentGuestList, setCurrentGuestList] = useState([]);
   const [rsvpId, setRsvpId] = useState([]);
   const [responseStatus, setResponseStatus] = useState();
+  // const [chipotleOrder, setChipotleOrder] = useState([]);
+  const [drawerVisible, setDrawerVisible] = useState(false);
 
   const [form] = Form.useForm();
 
@@ -68,7 +82,7 @@ const CreateRsvpForm = ({ visible, onCreate, onCancel }) => {
       >
         <Form.Item
           name="name"
-          label="Name"
+          label={<Title level={5}>Name</Title>}
           rules={[
             {
               required: true,
@@ -107,6 +121,27 @@ const CreateRsvpForm = ({ visible, onCreate, onCancel }) => {
             <Radio value={false}>No</Radio>
           </Radio.Group>
         </Form.Item>
+        <Divider type="horizontal" />
+        {/* <Drawer
+          title="Chipotle Order"
+          placement="bottom"
+          visible={() => {
+            if (responseStatus === true) {
+              setDrawerVisible(true);
+            }
+          }}
+        > */}
+        <Form.Item
+          name="Chipotle Order"
+          label={
+            <Title level={5} italic="true">
+              Please select your Chipotle order!
+            </Title>
+          }
+        >
+          <ChipotleOrderForm />
+        </Form.Item>
+        {/* </Drawer> */}
       </Form>
     </Modal>
   );

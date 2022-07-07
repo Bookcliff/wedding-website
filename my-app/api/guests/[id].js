@@ -1,4 +1,4 @@
-import { connectToDatabase } from "../../lib/connectToDatabase";
+import { connectToDatabase } from "../my-app/lib/connectToDatabase";
 const { ObjectId } = require("mongodb");
 
 //This function is to populate the RSVP form w/guest names, partner, and RSVP status. Combine into one function (if... elseif)
@@ -12,8 +12,6 @@ export default async function guestDataApi(req, res) {
 
     const oneGuest = await collection.findOne({ _id: ObjectId(id) });
 
-    console.log(oneGuest);
-
     res.status(200).json({ data: oneGuest });
   } else if (req.method === "PUT") {
     const db = await connectToDatabase();
@@ -21,7 +19,13 @@ export default async function guestDataApi(req, res) {
 
     const rsvp = await collection.updateOne(
       { _id: ObjectId(id) },
-      { $set: { rsvp: req.body.rsvp, rsvpStatus: true } }
+      {
+        $set: {
+          rsvp: req.body.rsvp,
+          rsvpStatus: true,
+          chipotleOrder: req.body.order,
+        },
+      }
     );
 
     res.status(200).json({ data: rsvp });
