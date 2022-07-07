@@ -55,66 +55,59 @@ const ChipotleOrderForm = () => (
         Style
       </Title>
       <Divider type="horizontal" />
-      <Checkbox value={chipotleStyleOptions.value}>
-        {chipotleStyleOptions.label}
-      </Checkbox>
+      {chipotleStyleOptions?.map((item) => (
+        <Checkbox key={item.value} value={item.value}>
+          {item?.label}
+        </Checkbox>
+      ))}
       <Divider type="horizontal" />
       <Title level={5} align="center">
         Meat
       </Title>
       <Divider type="horizontal" />
-      <Checkbox.Group options={chipotleMeatOptions} />
+      {chipotleMeatOptions?.map((item) => (
+        <Checkbox key={item.value} value={item.value}>
+          {item?.label}
+        </Checkbox>
+      ))}
       <Divider type="horizontal" />
       <Title level={5} align="center">
         Toppings
       </Title>
       <Divider type="horizontal" />
-      <Checkbox.Group options={chipotleToppingsRice} />
+      {chipotleToppingsRice?.map((item) => (
+        <Checkbox key={item.value} value={item.value}>
+          {item?.label}
+        </Checkbox>
+      ))}
       <Divider type="horizontal" />
-      <Checkbox.Group options={chipotleToppingsBeans} />
+      {chipotleToppingsBeans?.map((item) => (
+        <Checkbox key={item.value} value={item.value}>
+          {item?.label}
+        </Checkbox>
+      ))}
       <Divider type="horizontal" />
-      <Checkbox.Group options={chipotleToppingsSalsa} />
+      {chipotleToppingsSalsa?.map((item) => (
+        <Checkbox
+          key={item.value}
+          value={item.value}
+          style={{ display: "flex", marginLeft: 0 }}
+        >
+          {item?.label}
+        </Checkbox>
+      ))}
       <Divider type="horizontal" />
-      <Checkbox.Group options={chipotleToppingsOther} />
-      <Divider type="horizontal" />
+      {chipotleToppingsOther?.map((item) => (
+        <Checkbox
+          key={item.value}
+          value={item.value}
+          style={{ display: "flex", marginLeft: 0 }}
+        >
+          {item?.label}
+        </Checkbox>
+      ))}
     </Checkbox.Group>
   </>
 );
 
 export default ChipotleOrderForm;
-
-// import { Checkbox, Col, Row } from "antd";
-// import React from "react";
-
-// const onChange = (checkedValues) => {
-//   console.log("checked = ", checkedValues);
-// };
-
-// const Test = () => (
-//   <Checkbox.Group
-//     style={{
-//       width: "100%",
-//     }}
-//     onChange={onChange}
-//   >
-//     <Row>
-//       <Col span={8}>
-//         <Checkbox value="A">A</Checkbox>
-//       </Col>
-//       <Col span={8}>
-//         <Checkbox value="B">B</Checkbox>
-//       </Col>
-//       <Col span={8}>
-//         <Checkbox value="C">C</Checkbox>
-//       </Col>
-//       <Col span={8}>
-//         <Checkbox value="D">D</Checkbox>
-//       </Col>
-//       <Col span={8}>
-//         <Checkbox value="E">E</Checkbox>
-//       </Col>
-//     </Row>
-//   </Checkbox.Group>
-// );
-
-// export default Test;
