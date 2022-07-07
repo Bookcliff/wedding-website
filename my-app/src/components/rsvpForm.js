@@ -12,14 +12,13 @@ const CreateRsvpForm = ({ visible, onCreate, onCancel }) => {
 
   useEffect(() => {
     const getGuestList = async () => {
-      // const guestList = await fetch('/api/index');
       const guestList = await fetch("/api/guests/");
 
       const guests = await guestList.json();
 
       // eslint-disable-next-line array-callback-return
       const guestData = guests.data.filter((guest) => {
-        if (guest.rsvp === false) {
+        if (guest.rsvp === false && guest.rsvpStatus !== true) {
           return guest;
         }
       });
@@ -28,8 +27,6 @@ const CreateRsvpForm = ({ visible, onCreate, onCancel }) => {
     };
     getGuestList();
   }, []);
-
-  console.log(currentGuestList);
 
   const getRsvpSubmission = async () => {
     if ((responseStatus === true) | (responseStatus === false)) {
