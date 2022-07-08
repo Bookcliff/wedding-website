@@ -18,9 +18,10 @@ const { Option } = Select;
 const CreateRsvpForm = ({ visible, onCreate, onCancel }) => {
   const [currentGuestList, setCurrentGuestList] = useState([]);
   const [rsvpId, setRsvpId] = useState([]);
-  const [responseStatus, setResponseStatus] = useState();
   // const [chipotleOrder, setChipotleOrder] = useState([]);
   const [drawerVisible, setDrawerVisible] = useState(false);
+
+  console.log(drawerVisible);
 
   const [form] = Form.useForm();
 
@@ -42,12 +43,14 @@ const CreateRsvpForm = ({ visible, onCreate, onCancel }) => {
     getGuestList();
   }, []);
 
-  const getRsvpSubmission = async () => {
+  const getRsvpSubmission = async (values) => {
+    const responseStatus = values.modifier;
+    const order = values.ChipotleOrder;
     if ((responseStatus === true) | (responseStatus === false)) {
       await fetch(`/api/guests/${rsvpId}`, {
         method: "PUT",
         headers: { "Content-type": "application/json" },
-        body: JSON.stringify({ rsvp: responseStatus }),
+        body: JSON.stringify({ rsvp: responseStatus, order: order }),
       });
     }
   };
@@ -63,8 +66,9 @@ const CreateRsvpForm = ({ visible, onCreate, onCancel }) => {
         form
           .validateFields()
           .then((values) => {
+            console.log({ values });
             form.resetFields();
-            getRsvpSubmission();
+            getRsvpSubmission(values);
             onCreate(values);
           })
           .catch((info) => {
@@ -114,7 +118,7 @@ const CreateRsvpForm = ({ visible, onCreate, onCancel }) => {
         >
           <Radio.Group
             onChange={(e) => {
-              setResponseStatus(e.target.value);
+              setDrawerVisible(e.target.value);
             }}
           >
             <Radio value={true}>Yes</Radio>
@@ -125,22 +129,9 @@ const CreateRsvpForm = ({ visible, onCreate, onCancel }) => {
         {/* <Drawer
           title="Chipotle Order"
           placement="bottom"
-          visible={() => {
-            if (responseStatus === true) {
-              setDrawerVisible(true);
-            }
-          }}
+          visible={drawerVisible}
         > */}
-        <Form.Item
-          name="Chipotle Order"
-          label={
-            <Title level={5} italic="true">
-              Please select your Chipotle order!
-            </Title>
-          }
-        >
-          <ChipotleOrderForm />
-        </Form.Item>
+        <ChipotleOrderForm />
         {/* </Drawer> */}
       </Form>
     </Modal>

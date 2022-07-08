@@ -23,7 +23,7 @@ export default async function guestDataApi(req, res) {
         $set: {
           rsvp: req.body.rsvp,
           rsvpStatus: true,
-          // chipotleOrder: req.body.order,
+          chipotleOrder: req.body.order,
         },
       }
     );
