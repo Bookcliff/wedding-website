@@ -7,6 +7,7 @@ import {
   Typography,
   Divider,
   Drawer,
+  Space,
 } from "antd";
 import { useEffect, useState } from "react";
 import ChipotleOrderForm from "./chipotleOrderForm";
@@ -18,12 +19,13 @@ const { Option } = Select;
 const CreateRsvpForm = ({ visible, onCreate, onCancel }) => {
   const [currentGuestList, setCurrentGuestList] = useState([]);
   const [rsvpId, setRsvpId] = useState([]);
-  // const [chipotleOrder, setChipotleOrder] = useState([]);
   const [drawerVisible, setDrawerVisible] = useState(false);
 
-  console.log(drawerVisible);
-
   const [form] = Form.useForm();
+
+  const onClose = () => {
+    setDrawerVisible(false);
+  };
 
   useEffect(() => {
     const getGuestList = async () => {
@@ -66,7 +68,6 @@ const CreateRsvpForm = ({ visible, onCreate, onCancel }) => {
         form
           .validateFields()
           .then((values) => {
-            console.log({ values });
             form.resetFields();
             getRsvpSubmission(values);
             onCreate(values);
@@ -126,13 +127,22 @@ const CreateRsvpForm = ({ visible, onCreate, onCancel }) => {
           </Radio.Group>
         </Form.Item>
         <Divider type="horizontal" />
-        {/* <Drawer
+        <Drawer
           title="Chipotle Order"
-          placement="bottom"
+          placement="right"
+          onClose={onClose}
           visible={drawerVisible}
-        > */}
-        <ChipotleOrderForm />
-        {/* </Drawer> */}
+          extra={
+            <Space>
+              <Button onClick={onClose}>Cancel</Button>
+              <Button onClick={onClose} type="primary">
+                Submit
+              </Button>
+            </Space>
+          }
+        >
+          <ChipotleOrderForm />
+        </Drawer>
       </Form>
     </Modal>
   );
