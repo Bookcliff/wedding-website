@@ -3,7 +3,9 @@ import { connectToDatabase } from "../../lib/connectToDatabase";
 //This function is to populate the RSVP form w/guest names, partner, and RSVP status. Combine into one function (if... elseif)
 
 export default async function guestListApi(req, res) {
+  console.log("1");
   if (req.method === "GET") {
+    console.log("2");
     const db = await connectToDatabase();
     const collection = await db.collection("guestList");
 

@@ -2,7 +2,7 @@ import { Layout, Col, Row, List, Space, Typography, Divider } from "antd";
 import React from "react";
 import PhotoCarousel from "../components/carousel";
 import DayCountdown from "../components/countdown";
-import leafBorder from "../pictures/leafBorder.png";
+import leafBorder from "../pictures/leafBorder.webp";
 
 const { Content } = Layout;
 

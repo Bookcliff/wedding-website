@@ -29,9 +29,12 @@ const CreateRsvpForm = ({ visible, onCreate, onCancel }) => {
 
   useEffect(() => {
     const getGuestList = async () => {
+      console.log("hi");
       const guestList = await fetch("/api/guests/");
+      console.log({ guestList });
 
       const guests = await guestList.json();
+      console.log({ guests });
 
       // eslint-disable-next-line array-callback-return
       const guestData = guests.data.filter((guest) => {
