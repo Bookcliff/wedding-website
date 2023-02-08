@@ -1,14 +1,89 @@
-import { Layout } from 'antd';
-import React from 'react';
+import { Layout, Row, Col, Card } from "antd";
+import React from "react";
 
 const { Content } = Layout;
 
 export default function Registry() {
-    return (
-        <Layout>
-            <Content>
-                Registry
-            </Content>
-        </Layout>
-    )
+  return (
+    <Layout>
+      <Content>
+        <Row style={{ justifyContent: "center", margin: "16px" }} gutter={16}>
+          <Card style={{ width: "100%" }}>
+            <p>
+              All we want is for you to spend our wedding day with us! However,
+              if you would like to, in lieu of a traditional registry, we have
+              chosen a few charities that we care about. They are in no way
+              expected and any and all donations are greatly appreciated!
+            </p>
+          </Card>
+        </Row>
+        <Row style={{ margin: "16px" }} gutter={16}>
+          <Col xs={0} md={2}></Col>
+          <Col xs={24} md={10}>
+            <Card
+              title="Grace's Selected Charities"
+              headStyle={{ background: "rgb(234,224,220)" }}
+            >
+              <Card
+                type="inner"
+                title="Catholic Charities USA"
+                // extra={<a href="#">More</a>}
+              >
+                <a
+                  href="https://www.catholiccharitiesusa.org/"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  Donate Now
+                </a>
+              </Card>
+              <Card
+                style={{
+                  marginTop: 16,
+                }}
+                type="inner"
+                title="Giving What We Can"
+              >
+                <a
+                  href="https://www.givingwhatwecan.org/donate/organizations"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  Donate Now
+                </a>
+              </Card>
+            </Card>
+          </Col>
+          <Col xs={24} md={10}>
+            <Card
+              title="Russell's Selected Charities"
+              headStyle={{ background: "rgb(234,224,220)" }}
+            >
+              <Card
+                type="inner"
+                title="Card Title"
+                // extra={<a href="#">More</a>}
+              >
+                <a href="#" rel="noreferrer" target="_blank">
+                  Donate Now
+                </a>
+              </Card>
+              <Card
+                style={{
+                  marginTop: 16,
+                }}
+                type="inner"
+                title="Inner Card title"
+              >
+                <a href="#" rel="noreferrer" target="_blank">
+                  Donate Now
+                </a>
+              </Card>
+            </Card>
+          </Col>
+          <Col xs={0} md={2}></Col>
+        </Row>
+      </Content>
+    </Layout>
+  );
 }

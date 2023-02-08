@@ -23,6 +23,8 @@ const CreateRsvpForm = ({ visible, onCreate, onCancel }) => {
 
   const [form] = Form.useForm();
 
+  console.log({ drawerVisible });
+
   const onClose = () => {
     setDrawerVisible(false);
   };
@@ -132,19 +134,25 @@ const CreateRsvpForm = ({ visible, onCreate, onCancel }) => {
         <Divider type="horizontal" />
         <Drawer
           title="Chipotle Order"
-          placement="right"
+          placement="top"
           onClose={onClose}
           visible={drawerVisible}
-          extra={
-            <Space>
-              <Button onClick={onClose}>Cancel</Button>
-              <Button onClick={onClose} type="primary">
-                Submit
-              </Button>
-            </Space>
-          }
+          // extra={
+          //   <Space>
+          //     <Button onClick={onClose}>Cancel</Button>
+          //     <Button onClick={onClose} type="primary">
+          //       Submit
+          //     </Button>
+          //   </Space>
+          // }
         >
           <ChipotleOrderForm />
+          <Space>
+            <Button onClick={onClose}>Cancel</Button>
+            <Button onClick={onClose} type="primary">
+              Submit
+            </Button>
+          </Space>
         </Drawer>
       </Form>
     </Modal>
