@@ -25,7 +25,7 @@ const details = [
   },
   {
     title: "Reception Dress code",
-    description: "Whatever your heart :)",
+    description: "Whatever your heart desires :)",
   },
 ];
 
