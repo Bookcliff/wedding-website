@@ -11,7 +11,7 @@ const items = [
     key: "weddingInfo",
   },
   { label: <Link to="/rsvp">RSVP</Link>, key: "rsvp" },
-  // { label: (<Link to="/party">Wedding Party</Link>), key: "party", },
+  { label: <Link to="/party">Wedding Party</Link>, key: "party" },
   { label: <Link to="/registry">Registry</Link>, key: "registry" },
   // { label: (<Link to="/nft">NFT Information</Link>), key: "nft", }
 ];

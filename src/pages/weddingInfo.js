@@ -23,7 +23,7 @@ const details = [
   },
   {
     title: "Reception Dress code",
-    description: "Tiny hats and outrageous socks :)",
+    description: "Whatever your heart desires :)",
   },
 ];
 

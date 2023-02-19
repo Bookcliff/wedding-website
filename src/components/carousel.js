@@ -23,7 +23,7 @@ import oct2022 from "../pictures/oct2022.jpg";
 const contentStyle = {
   height: "90vh",
   color: "#fff",
-  background: "rgb(234,224,220)",
+  background: "#798878",
 };
 
 // const couplePhotos = [

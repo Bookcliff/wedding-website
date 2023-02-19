@@ -1,13 +1,16 @@
-import { Layout, Row, Col, Card } from "antd";
+import { Layout, Row, Col, Card, Typography } from "antd";
 import React from "react";
 
 const { Content } = Layout;
+const { Title } = Typography;
 
 export default function Registry() {
   return (
     <Layout>
       <Content>
         <Row style={{ justifyContent: "center", margin: "16px" }} gutter={16}>
+          <Title className="weddingDate">Registry</Title>
+
           <Card style={{ width: "100%" }}>
             <p>
               All we want is for you to spend our wedding day with us! However,
@@ -22,7 +25,7 @@ export default function Registry() {
           <Col xs={24} md={10}>
             <Card
               title="Grace's Selected Charities"
-              headStyle={{ background: "rgb(234,224,220)" }}
+              headStyle={{ background: "#798878" }}
             >
               <Card
                 type="inner"
@@ -57,7 +60,7 @@ export default function Registry() {
           <Col xs={24} md={10}>
             <Card
               title="Russell's Selected Charities"
-              headStyle={{ background: "rgb(234,224,220)" }}
+              headStyle={{ background: "#798878" }}
             >
               <Card
                 type="inner"
