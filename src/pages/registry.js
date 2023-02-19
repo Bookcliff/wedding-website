@@ -13,10 +13,10 @@ export default function Registry() {
 
           <Card style={{ width: "100%" }}>
             <p>
-              All we want is for you to spend our wedding day with us! However,
-              in lieu of a traditional registry, we have chosen a few charities
-              that we care about. Donations are in no way expected and any and
-              all are greatly appreciated!
+              All we want is for you to spend our wedding day with us! In lieu
+              of a traditional registry, we have chosen a few charities that we
+              care about. Donations are in no way expected and any and all are
+              greatly appreciated!
             </p>
           </Card>
         </Row>
@@ -30,6 +30,7 @@ export default function Registry() {
               <Card
                 type="inner"
                 title="Catholic Charities USA"
+                hoverable
                 // extra={<a href="#">More</a>}
               >
                 <a
@@ -45,6 +46,7 @@ export default function Registry() {
                   marginTop: 16,
                 }}
                 type="inner"
+                hoverable
                 title="Giving What We Can"
               >
                 <a
@@ -65,6 +67,7 @@ export default function Registry() {
               <Card
                 type="inner"
                 title="Against Malaria Foundation"
+                hoverable
                 // extra={<a href="#">More</a>}
               >
                 <a

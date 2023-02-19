@@ -16,8 +16,8 @@ export default function Party() {
           <Title className="weddingDate">Wedding Party</Title>
         </Row>
         <Row style={{ margin: "16px" }} gutter={16}>
-          <Col xs={0} md={2}></Col>
-          <Col xs={24} md={10}>
+          <Col xs={0} md={2} lg={6}></Col>
+          <Col xs={24} md={10} lg={6}>
             <Card title="Groom's Party" headStyle={{ background: "#798878" }}>
               <Space
                 direction="vertical"
@@ -43,7 +43,7 @@ export default function Party() {
               </Space>
             </Card>
           </Col>
-          <Col xs={24} md={10}>
+          <Col xs={24} md={10} lg={6}>
             <Card title="Bridal Party" headStyle={{ background: "#798878" }}>
               <Space
                 direction="vertical"
@@ -69,7 +69,7 @@ export default function Party() {
               </Space>
             </Card>
           </Col>
-          <Col xs={0} md={2}></Col>
+          <Col xs={0} md={2} lg={6}></Col>
         </Row>
       </Content>
     </Layout>
