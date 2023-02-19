@@ -29,6 +29,12 @@ const CreateRsvpForm = ({ visible, onCreate, onCancel }) => {
     setDrawerVisible(false);
   };
 
+  const success = () => {
+    Modal.success({
+      content: "Response successfully submitted!",
+    });
+  };
+
   useEffect(() => {
     const getGuestList = async () => {
       console.log("hi");
@@ -76,6 +82,7 @@ const CreateRsvpForm = ({ visible, onCreate, onCancel }) => {
             form.resetFields();
             getRsvpSubmission(values);
             onCreate(values);
+            success();
           })
           .catch((info) => {
             console.log("Validate Failed:", info);
