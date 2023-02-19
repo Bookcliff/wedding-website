@@ -11,9 +11,9 @@ export default function Registry() {
           <Card style={{ width: "100%" }}>
             <p>
               All we want is for you to spend our wedding day with us! However,
-              if you would like to, in lieu of a traditional registry, we have
-              chosen a few charities that we care about. They are in no way
-              expected and any and all donations are greatly appreciated!
+              in lieu of a traditional registry, we have chosen a few charities
+              that we care about. Donations are in no way expected and any and
+              all are greatly appreciated!
             </p>
           </Card>
         </Row>
@@ -61,21 +61,14 @@ export default function Registry() {
             >
               <Card
                 type="inner"
-                title="Card Title"
+                title="Against Malaria Foundation"
                 // extra={<a href="#">More</a>}
               >
-                <a href="#" rel="noreferrer" target="_blank">
-                  Donate Now
-                </a>
-              </Card>
-              <Card
-                style={{
-                  marginTop: 16,
-                }}
-                type="inner"
-                title="Inner Card title"
-              >
-                <a href="#" rel="noreferrer" target="_blank">
+                <a
+                  href="https://www.againstmalaria.com/donate.aspx"
+                  rel="noreferrer"
+                  target="_blank"
+                >
                   Donate Now
                 </a>
               </Card>
