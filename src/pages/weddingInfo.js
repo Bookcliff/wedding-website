@@ -12,10 +12,12 @@ const details = [
   {
     title: "Ceremony Location & Time",
     description: "Sacred Heart of Jesus Parish in Wadsworth, Ohio at 02:00 PM",
+    link: "https://www.google.com/maps/place/Sacred+Heart+of+Jesus+Catholic+Church/@41.0258861,-81.7251857,17z/data=!3m1!4b1!4m6!3m5!1s0x8830cda878058707:0xec0d02f447d8bd09!8m2!3d41.0258861!4d-81.7229917!16s%2Fg%2F1tcvpxq9",
   },
   {
     title: "Reception Location & Time",
     description: "Boland House in Wadsworth, Ohio following the ceremony",
+    link: "https://www.google.com/maps/place/10303+Mt+Eaton+Rd,+Wadsworth,+OH+44281/@40.9931132,-81.7314504,17z/data=!3m1!4b1!4m6!3m5!1s0x8830cd2f4be940cb:0xfb719b6f2e642c46!8m2!3d40.9931132!4d-81.7292564!16s%2Fg%2F11c4y_wwm5",
   },
   {
     title: "Ceremony Dress code",
@@ -23,7 +25,7 @@ const details = [
   },
   {
     title: "Reception Dress code",
-    description: "Whatever your heart desires :)",
+    description: "Whatever your heart :)",
   },
 ];
 
@@ -120,7 +122,11 @@ export default function WeddingInfo() {
                     <List.Item>
                       <List.Item.Meta
                         title={item.title}
-                        description={item.description}
+                        description={
+                          <a href={item.link} target="_blank" rel="noreferrer">
+                            {item.description}
+                          </a>
+                        }
                       />
                     </List.Item>
                   )}
