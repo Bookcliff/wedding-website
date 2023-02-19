@@ -18,6 +18,7 @@ import apr2022 from "../pictures/apr2022.webp";
 import june2022mx from "../pictures/june2022-mx.webp";
 import june2022mx2 from "../pictures/june2022-mx2.webp";
 import june2022 from "../pictures/june2022.webp";
+import oct2022 from "../pictures/oct2022.jpg";
 
 const contentStyle = {
   height: "90vh",
@@ -173,6 +174,12 @@ export default function PhotoCarousel() {
         <h3 className="bottom-center">June 2022</h3>
         <div className="imgDiv">
           <img className="carouselImg" src={june2022} alt="june2022" />
+        </div>
+      </div>
+      <div className="container">
+        <h3 className="bottom-center">October 2022</h3>
+        <div className="imgDiv">
+          <img className="carouselImg" src={oct2022} alt="oct2022" />
         </div>
       </div>
     </Carousel>
