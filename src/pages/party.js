@@ -3,6 +3,7 @@ import React from "react";
 import steve from "../pictures/steve.jpg";
 import sarah from "../pictures/sarah.jpg";
 import kyle from "../pictures/kyle.jpg";
+import emerson from "../pictures/emerson.jpg";
 
 const { Content } = Layout;
 const { Meta } = Card;
@@ -70,6 +71,22 @@ export default function Party() {
             </Card>
           </Col>
           <Col xs={0} md={2} lg={6}></Col>
+        </Row>
+        <Row style={{ justifyContent: "center", margin: "16px" }} gutter={16}>
+          <Title className="weddingDate">Support Staff</Title>
+        </Row>
+        <Row style={{ margin: "16px" }} gutter={16}>
+          <Col xs={0} md={2} lg={6}></Col>
+          <Col xs={24} md={10} lg={6}>
+            <Card hoverable cover={<img alt="Dominic Boland" src="#" />}>
+              <Meta title="Dominic Boland" description="Music Man" />
+            </Card>
+          </Col>
+          <Col xs={24} md={10} lg={6}>
+            <Card hoverable cover={<img alt="Emerson Cloud" src={emerson} />}>
+              <Meta title="Emerson Cloud" description="Photographer" />
+            </Card>
+          </Col>
         </Row>
       </Content>
     </Layout>
