@@ -184,7 +184,7 @@ const RsvpForm = () => {
           setVisible(true);
         }}
       >
-        RSVP Now
+        RSVP
       </Button>
       <CreateRsvpForm
         visible={visible}

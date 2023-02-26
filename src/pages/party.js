@@ -80,7 +80,7 @@ export default function Party() {
           <Col xs={0} md={2} lg={6}></Col>
           <Col xs={24} md={10} lg={6}>
             <Card hoverable cover={<img alt="Dominic Boland" src="#" />}>
-              <Meta title="Dominic Boland" description="Music Man" />
+              <Meta title="Dominic Boland" description="Music" />
             </Card>
           </Col>
           <Col xs={24} md={10} lg={6}>
