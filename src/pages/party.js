@@ -4,6 +4,7 @@ import steve from "../pictures/steve.jpg";
 import sarah from "../pictures/sarah.jpg";
 import kyle from "../pictures/kyle.jpg";
 import emerson from "../pictures/emerson.jpg";
+import betsy from "../pictures/betsy.jpg";
 
 const { Content } = Layout;
 const { Meta } = Card;
@@ -63,7 +64,7 @@ export default function Party() {
                 <Card
                   type="inner"
                   hoverable
-                  cover={<img alt="Betsy Galicia" src="#" />}
+                  cover={<img alt="Betsy Galicia" src={betsy} />}
                 >
                   <Meta title="Betsy Galicia" description="Maid of Honor" />
                 </Card>
@@ -73,7 +74,7 @@ export default function Party() {
           <Col xs={0} md={2} lg={6}></Col>
         </Row>
         <Row style={{ justifyContent: "center", margin: "16px" }} gutter={16}>
-          <Title className="weddingDate">Support Staff</Title>
+          <Title className="weddingDate">Support</Title>
         </Row>
         <Row style={{ margin: "16px" }} gutter={16}>
           <Col xs={0} md={2} lg={6}></Col>
