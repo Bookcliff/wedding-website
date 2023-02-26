@@ -1,4 +1,5 @@
 import { Carousel } from "antd";
+import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import React from "react";
 import jan2015 from "../pictures/jan2015.webp";
 import oct2015 from "../pictures/oct2015.webp";
@@ -67,7 +68,14 @@ export default function PhotoCarousel() {
     //     </Carousel>
     //   );
     // }
-    <Carousel autoplay effect="fade" style={contentStyle}>
+    <Carousel
+      arrows={true}
+      prevArrow={<LeftOutlined />}
+      nextArrow={<RightOutlined />}
+      autoplay
+      effect="fade"
+      style={contentStyle}
+    >
       <div className="container">
         <h3 className="bottom-center">January 2015</h3>
         <div className="imgDiv">
