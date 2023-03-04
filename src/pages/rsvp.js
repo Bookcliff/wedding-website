@@ -58,6 +58,9 @@ export default function Rsvp() {
           </Col>
           <Col xs={0} sm={6}></Col>
         </Row>
+        <Row style={{ height: "5vh" }}>
+          <Col span={24}></Col>
+        </Row>
       </Content>
     </Layout>
   );
