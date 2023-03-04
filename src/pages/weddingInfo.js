@@ -112,11 +112,13 @@ export default function WeddingInfo() {
                         className="borderContainer"
                       >
                         <Col span={24}>
-                          <img
-                            src={leafBorder}
-                            alt="leaf border"
-                            className="leafBorder"
-                          />{" "}
+                          <div className="leafBorder">
+                            <img
+                              src={leafBorder}
+                              alt="leaf border"
+                              style={{ width: "100%" }}
+                            />
+                          </div>
                         </Col>
                       </Row>
                     </>
