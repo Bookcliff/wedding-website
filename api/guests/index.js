@@ -9,7 +9,7 @@ export default async function guestListApi(req, res) {
     const db = await connectToDatabase();
     const collection = await db.collection("guestList");
 
-    const guests = await collection.find({}).toArray().sort({ name: 1 });
+    const guests = await collection.find({}).toArray();
     // const guests = await collection.insertOne({name: "test", couple: "true", partner: "test2", rsvp: "false"})
 
     res.status(200).json({ data: guests });
