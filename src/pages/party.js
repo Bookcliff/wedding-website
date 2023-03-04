@@ -6,6 +6,7 @@ import kyle from "../pictures/kyle.jpg";
 import emerson from "../pictures/emerson.jpg";
 import betsy from "../pictures/betsy.jpg";
 import dominic from "../pictures/dominic.jpg";
+import matthias from "../pictures/matthias.jpg";
 
 const { Content } = Layout;
 const { Meta } = Card;
@@ -93,18 +94,29 @@ export default function Party() {
               >
                 <Meta title="Dominic Boland" description="Music" />
               </Card>
-              <Card hoverable cover={<img alt="Matthias Boland" src="#" />}>
+            </Space>
+          </Col>
+          <Col xs={24} md={10} lg={6}>
+            <Space
+              direction="vertical"
+              size="middle"
+              style={{
+                display: "flex",
+              }}
+            >
+              <Card hoverable cover={<img alt="Emerson Cloud" src={emerson} />}>
+                <Meta title="Emerson Cloud" description="Photographer" />
+              </Card>
+              <Card
+                hoverable
+                cover={<img alt="Matthias Boland" src={matthias} />}
+              >
                 <Meta
                   title="Matthias Boland"
                   description="Altar Server & Chipotle Gatherer"
                 />
               </Card>
             </Space>
-          </Col>
-          <Col xs={24} md={10} lg={6}>
-            <Card hoverable cover={<img alt="Emerson Cloud" src={emerson} />}>
-              <Meta title="Emerson Cloud" description="Photographer" />
-            </Card>
           </Col>
         </Row>
       </Content>
