@@ -32,14 +32,12 @@ export default function Party() {
               >
                 <Card
                   type="inner"
-                  hoverable
                   cover={<img alt="Steven Gates" src={steve} />}
                 >
                   <Meta title="Steven Gates" description="Best Man" />
                 </Card>
                 <Card
                   type="inner"
-                  hoverable
                   cover={<img alt="Kyle Trusler" src={kyle} />}
                 >
                   <Meta title="Kyle Trusler" description="Best Man" />
@@ -58,14 +56,12 @@ export default function Party() {
               >
                 <Card
                   type="inner"
-                  hoverable
                   cover={<img alt="Sarah Barksdale" src={sarah} />}
                 >
                   <Meta title="Sarah Barksdale" description="Maid of Honor" />
                 </Card>
                 <Card
                   type="inner"
-                  hoverable
                   cover={<img alt="Betsy Galicia" src={betsy} />}
                 >
                   <Meta title="Betsy Galicia" description="Maid of Honor" />
@@ -88,10 +84,7 @@ export default function Party() {
                 display: "flex",
               }}
             >
-              <Card
-                hoverable
-                cover={<img alt="Dominic Boland" src={dominic} />}
-              >
+              <Card cover={<img alt="Dominic Boland" src={dominic} />}>
                 <Meta title="Dominic Boland" description="Music" />
               </Card>
             </Space>
@@ -104,13 +97,10 @@ export default function Party() {
                 display: "flex",
               }}
             >
-              <Card hoverable cover={<img alt="Emerson Cloud" src={emerson} />}>
+              <Card cover={<img alt="Emerson Cloud" src={emerson} />}>
                 <Meta title="Emerson Cloud" description="Photographer" />
               </Card>
-              <Card
-                hoverable
-                cover={<img alt="Matthias Boland" src={matthias} />}
-              >
+              <Card cover={<img alt="Matthias Boland" src={matthias} />}>
                 <Meta
                   title="Matthias Boland"
                   description="Altar Server & Chipotle Gatherer"
