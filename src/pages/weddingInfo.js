@@ -1,5 +1,5 @@
 import { Layout, Col, Row, List, Space, Typography, Divider } from "antd";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import PhotoCarousel from "../components/carousel";
 import DayCountdown from "../components/countdown";
 import leafBorder from "../pictures/leafBorder.webp";
@@ -29,25 +29,29 @@ const details = [
   },
 ];
 
-// const faq = [
-//   {
-//     title: "How do I RSVP?",
-//     description:
-//       "Click on 'RSVP' in the navigation bar and follow the directions on the page.",
-//   },
-//   {
-//     title: "What is an NFT?",
-//     description:
-//       "NFT stands for 'Non-Fungible Token'. Russell and Grace have created NFTs as a fun way to uniquely identify your participation in this momentous event. Please see the NFT tab for further information and step-by-step instructions",
-//   },
-//   {
-//     title: "What about wedding gifts?",
-//     description:
-//       "In lieu of wedding gifts, Russell and Grace are requesting donations to charitable organizations. This is in no way expected, however if you would like to, Russell and Grace have listed some charitable organizations they like and support on the Donations tab.",
-//   },
-// ];
-
 export default function WeddingInfo() {
+  const [phone, setPhone] = useState();
+
+  useEffect(() => {
+    console.log(window.innerWidth);
+    const size = window.innerWidth;
+
+    if (size > 600) {
+      setPhone(false);
+    } else {
+      setPhone(true);
+    }
+  }, []);
+
+  const dateAlignment = () => {
+    console.log(phone);
+    if (phone) {
+      return "center";
+    } else {
+      return "right";
+    }
+  };
+
   return (
     <Layout>
       <Content>
@@ -63,15 +67,15 @@ export default function WeddingInfo() {
               <div className="weddingDate">
                 <Title>Russell & Grace</Title>
                 <Row>
-                  <Col xs={24} sm={11} align="right" justify="middle">
+                  <Col xs={24} sm={11} align={dateAlignment()} justify="middle">
                     <Title level={3}>June 02, 2023</Title>
                   </Col>
                   <Col xs={24} sm={2}>
                     <Title level={3}>&#8226;</Title>
                   </Col>
-                  <Col xs={24} sm={11} align="center" justify="middle">
+                  <Col xs={24} sm={11} align={dateAlignment()} justify="middle">
                     <Title level={3}>
-                      <DayCountdown />
+                      <DayCountdown phone={phone} />
                     </Title>
                   </Col>
                 </Row>
