@@ -22,6 +22,7 @@ const details = [
   {
     title: "Ceremony Dress code",
     description: "Church attire",
+    link: "https://en.wikipedia.org/wiki/Religious_clothing#/media/File:Costumes_religieux_RELIGIOUS_CLOTHING_costumes_habit_historical_christian_liturgical_clerical_ancient_Jews_orders_monks_nuns_Asian_etc_PD_illustration_French_encyclopedia_Larousse_du_XX%C3%A8me_si%C3%A8cle_1932.jpg",
   },
   {
     title: "Reception Dress code",

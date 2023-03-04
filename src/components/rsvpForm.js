@@ -35,6 +35,12 @@ const CreateRsvpForm = ({ visible, onCreate, onCancel }) => {
     });
   };
 
+  const chipotleSuccess = () => {
+    Modal.success({
+      content: "Order successfully created! RSVP to submit your order.",
+    });
+  };
+
   useEffect(() => {
     const getGuestList = async () => {
       console.log("hi");
@@ -139,24 +145,34 @@ const CreateRsvpForm = ({ visible, onCreate, onCancel }) => {
           </Radio.Group>
         </Form.Item>
         <Divider type="horizontal" />
+        <a
+          rel="noreferrer"
+          target="_blank"
+          href="https://calendar.google.com/calendar/event?action=TEMPLATE&amp;tmeid=NnQwbjZrM2pzc2FidnZ1dm1sbnJka3Z1djIgZ2JvbGFuZDExMUBt&amp;tmsrc=gboland111%40gmail.com"
+        >
+          <img
+            alt="Google Calendar Link"
+            border="0"
+            src="https://www.google.com/calendar/images/ext/gc_button1_en.gif"
+          />
+        </a>
+        <Divider type="horizontal" />
         <Drawer
           title="Chipotle Order"
           placement="top"
           onClose={onClose}
           visible={drawerVisible}
-          // extra={
-          //   <Space>
-          //     <Button onClick={onClose}>Cancel</Button>
-          //     <Button onClick={onClose} type="primary">
-          //       Submit
-          //     </Button>
-          //   </Space>
-          // }
         >
           <ChipotleOrderForm />
           <Space>
             <Button onClick={onClose}>Cancel</Button>
-            <Button onClick={onClose} type="primary">
+            <Button
+              onClick={() => {
+                onClose();
+                chipotleSuccess();
+              }}
+              type="primary"
+            >
               Submit
             </Button>
           </Space>
