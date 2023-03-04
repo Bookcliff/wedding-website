@@ -10,19 +10,24 @@ export default function Registry() {
       <Content>
         <Row style={{ justifyContent: "center", margin: "16px" }} gutter={16}>
           <Title className="weddingDate">Registry</Title>
-
-          <Card style={{ width: "100%" }}>
-            <p>
-              All we want is for you to spend our wedding day with us! In lieu
-              of a traditional registry, we have chosen a few charities that we
-              care about. Donations are in no way expected and any and all are
-              greatly appreciated!
-            </p>
-          </Card>
+        </Row>
+        <Row style={{ justifyContent: "center", margin: "16px" }} gutter={16}>
+          <Col xs={0} md={2} lg={6}></Col>
+          <Col xs={24} md={20} lg={12}>
+            <Card>
+              <p>
+                All we want is for you to spend our wedding day with us! In lieu
+                of a traditional registry, we have chosen a few charities that
+                we care about. Donations are in no way expected and any and all
+                are greatly appreciated!
+              </p>
+            </Card>
+          </Col>
+          <Col xs={0} md={2} lg={6}></Col>
         </Row>
         <Row style={{ margin: "16px" }} gutter={16}>
-          <Col xs={0} md={2}></Col>
-          <Col xs={24} md={10}>
+          <Col xs={0} md={2} lg={6}></Col>
+          <Col xs={24} md={10} lg={6}>
             <Card
               title="Grace's Selected Charities"
               headStyle={{ background: "#798878" }}
@@ -59,7 +64,7 @@ export default function Registry() {
               </Card>
             </Card>
           </Col>
-          <Col xs={24} md={10}>
+          <Col xs={24} md={10} lg={6}>
             <Card
               title="Russell's Selected Charities"
               headStyle={{ background: "#798878" }}
@@ -80,7 +85,7 @@ export default function Registry() {
               </Card>
             </Card>
           </Col>
-          <Col xs={0} md={2}></Col>
+          <Col xs={0} md={2} lg={6}></Col>
         </Row>
       </Content>
     </Layout>

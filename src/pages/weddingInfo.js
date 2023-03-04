@@ -63,8 +63,8 @@ export default function WeddingInfo() {
             </Col>
           </Row>
           <Row>
-            <Col xs={0} sm={4}></Col>
-            <Col xs={24} sm={16}>
+            <Col xs={0} md={2} lg={6}></Col>
+            <Col xs={24} md={20} lg={12}>
               <div className="weddingDate">
                 <Title>Russell & Grace</Title>
                 <Row>
@@ -82,17 +82,17 @@ export default function WeddingInfo() {
                 </Row>
               </div>
             </Col>
-            <Col xs={0} sm={4}></Col>
+            <Col xs={0} md={2} lg={6}></Col>
           </Row>
           <Row>
-            <Col xs={0} sm={4}></Col>
-            <Col xs={24} sm={16}>
+            <Col xs={0} md={2} lg={6}></Col>
+            <Col xs={24} md={20} lg={12}>
               <PhotoCarousel />
             </Col>
           </Row>
           <Row>
-            <Col xs={0} sm={4}></Col>
-            <Col xs={24} sm={16}>
+            <Col xs={0} md={2} lg={6}></Col>
+            <Col xs={24} md={20} lg={12}>
               <div>
                 <List
                   size="large"
@@ -138,6 +138,7 @@ export default function WeddingInfo() {
                 ></List>
               </div>
             </Col>
+            <Col xs={0} md={2} lg={6}></Col>
           </Row>
         </Space>
       </Content>
