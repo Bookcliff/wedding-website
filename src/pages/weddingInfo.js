@@ -27,6 +27,7 @@ const details = [
   {
     title: "Reception Dress code",
     description: "Whatever your heart desires :)",
+    link: "https://imgur.com/1cbT9GR",
   },
 ];
 
