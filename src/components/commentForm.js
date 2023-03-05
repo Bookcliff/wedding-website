@@ -13,16 +13,13 @@ export const CommentSubmission = () => {
   const [form] = Form.useForm();
 
   const putComment = async (values) => {
-    const responseStatus = values.modifier;
     const name = values.name;
     const comment = values.comment;
-    if ((responseStatus === true) | (responseStatus === false)) {
-      await fetch(`/api/comments/index`, {
-        method: "POST",
-        headers: { "Content-type": "application/json" },
-        body: JSON.stringify({ name: name, comment: comment }),
-      });
-    }
+    await fetch(`/api/comments/`, {
+      method: "POST",
+      headers: { "Content-type": "application/json" },
+      body: JSON.stringify({ name: name, comment: comment }),
+    });
   };
 
   const onCreate = (values) => {
