@@ -17,7 +17,7 @@ export const CommentSubmission = () => {
     const name = values.name;
     const comment = values.comment;
     if ((responseStatus === true) | (responseStatus === false)) {
-      await fetch(`/api/comments/`, {
+      await fetch(`/api/comments/index`, {
         method: "POST",
         headers: { "Content-type": "application/json" },
         body: JSON.stringify({ name: name, comment: comment }),
