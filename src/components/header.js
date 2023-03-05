@@ -13,8 +13,7 @@ const items = [
   { label: <Link to="/party">Wedding Party</Link>, key: "party" },
   { label: <Link to="/registry">Registry</Link>, key: "registry" },
   { label: <Link to="/rsvp">RSVP</Link>, key: "rsvp" },
-
-  // { label: (<Link to="/nft">NFT Information</Link>), key: "nft", }
+  { label: <Link to="/comments">Comments</Link>, key: "comments" },
 ];
 
 const NavMenu = () => {

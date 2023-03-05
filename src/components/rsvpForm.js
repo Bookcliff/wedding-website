@@ -16,6 +16,12 @@ const { Title } = Typography;
 
 const { Option } = Select;
 
+export const success = () => {
+  Modal.success({
+    content: "Response successfully submitted!",
+  });
+};
+
 const CreateRsvpForm = ({ visible, onCreate, onCancel }) => {
   const [currentGuestList, setCurrentGuestList] = useState([]);
   const [rsvpId, setRsvpId] = useState([]);
@@ -27,12 +33,6 @@ const CreateRsvpForm = ({ visible, onCreate, onCancel }) => {
 
   const onClose = () => {
     setDrawerVisible(false);
-  };
-
-  const success = () => {
-    Modal.success({
-      content: "Response successfully submitted!",
-    });
   };
 
   const chipotleSuccess = () => {
