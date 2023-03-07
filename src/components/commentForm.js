@@ -1,5 +1,6 @@
 import { Button, Form, Input } from "antd";
 import { success } from "./rsvpForm";
+import { React } from "react";
 
 const onFinish = (values) => {
   console.log("Success:", values);
@@ -13,6 +14,7 @@ export const CommentSubmission = () => {
   const [form] = Form.useForm();
 
   const putComment = async (values) => {
+    console.log({ values });
     const name = values.name;
     const comment = values.comment;
     await fetch(`/api/comments/`, {
@@ -27,69 +29,51 @@ export const CommentSubmission = () => {
   };
 
   return (
-    <Form
-      name="comment"
-      labelCol={{
-        span: 3,
-      }}
-      initialValues={{
-        remember: true,
-      }}
-      onFinish={onFinish}
-      onFinishFailed={onFinishFailed}
-      autoComplete="off"
-    >
-      <Form.Item
-        label="Comment"
+    <>
+      <Form
+        form={form}
         name="comment"
-        rules={[
-          {
-            required: true,
-            message: "Please leave a comment for Russell & Grace!",
-          },
-        ]}
-      >
-        <Input />
-      </Form.Item>
-      <Form.Item
-        label="Name"
-        name="name"
-        rules={[
-          {
-            required: true,
-            message: "Sign your comment!",
-          },
-        ]}
-      >
-        <Input />
-      </Form.Item>
-
-      <Form.Item
-        wrapperCol={{
-          offset: 3,
-          span: 16,
+        labelCol={{
+          span: 3,
         }}
+        onFinish={onFinish}
+        onFinishFailed={onFinishFailed}
+        autoComplete="off"
       >
-        <Button
-          type="primary"
-          htmlType="submit"
-          onClick={() => {
-            form
-              .validateFields()
-              .then((values) => {
-                form.resetFields();
-                putComment(values);
-                onCreate(values);
-                success();
-              })
-              .catch((info) => {
-                console.log("Validate Failed:", info);
-              });
+        <Form.Item label="Message" name="comment">
+          <Input />
+        </Form.Item>
+        <Form.Item label="Name" name="name">
+          <Input />
+        </Form.Item>
+
+        <Form.Item
+          wrapperCol={{
+            offset: 3,
+            span: 16,
           }}
         >
-          Submit
-        </Button>
-      </Form.Item>
-    </Form>
+          <Button
+            type="primary"
+            htmlType="submit"
+            onClick={() => {
+              form
+                .validateFields()
+                .then((values) => {
+                  form.resetFields();
+                  putComment(values);
+                  onCreate(values);
+                  success();
+                })
+                .catch((info) => {
+                  console.log("Validate Failed:", info);
+                });
+            }}
+          >
+            Submit
+          </Button>
+        </Form.Item>
+      </Form>
+    </>
   );
 };
