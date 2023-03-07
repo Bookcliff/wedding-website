@@ -144,7 +144,7 @@ const CreateRsvpForm = ({ visible, onCreate, onCancel }) => {
         <a
           rel="noreferrer"
           target="_blank"
-          href="https://calendar.google.com/calendar/event?action=TEMPLATE&amp;tmeid=NnQwbjZrM2pzc2FidnZ1dm1sbnJka3Z1djIgZ2JvbGFuZDExMUBt&amp;tmsrc=gboland111%40gmail.com"
+          href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=N25qcmtyZ2RjdWtqb3VtazcxNHJibXYwNjYgYWY3ZmJmYzgyZjljMjY1ZTBhMGQxMDlhZjJmYWU2ZWY2M2Q5NTA5NzgwZmYwMDhiYmNkN2YyOTBkMzRmZGY4NUBn&tmsrc=af7fbfc82f9c265e0a0d109af2fae6ef63d9509780ff008bbcd7f290d34fdf85%40group.calendar.google.com"
         >
           <img
             alt="Google Calendar Link"
