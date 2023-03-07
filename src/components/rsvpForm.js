@@ -29,8 +29,6 @@ const CreateRsvpForm = ({ visible, onCreate, onCancel }) => {
 
   const [form] = Form.useForm();
 
-  console.log({ drawerVisible });
-
   const onClose = () => {
     setDrawerVisible(false);
   };
@@ -45,8 +43,6 @@ const CreateRsvpForm = ({ visible, onCreate, onCancel }) => {
     const getGuestList = async () => {
       console.log("hi");
       const guestList = await fetch("/api/guests/");
-      console.log({ guestList });
-
       const guests = await guestList.json();
       console.log({ guests });
 

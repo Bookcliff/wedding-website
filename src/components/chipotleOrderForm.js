@@ -42,6 +42,7 @@ const chipotleToppingsOther = [
   { label: "Cheese", value: "Cheese" },
   { label: "Romaine Lettuce", value: "Romaine Lettuce" },
   { label: "Queso Blanco", value: "Queso Blanco" },
+  { label: "Guacamole", value: "Guacamole" },
 ];
 
 const ChipotleOrderForm = () => {

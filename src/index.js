@@ -61,7 +61,7 @@ root.render(
             }
           />
           <Route
-            path="/comments"
+            path="/messages"
             element={
               <>
                 <MainHeader />
