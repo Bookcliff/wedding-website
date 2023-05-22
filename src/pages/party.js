@@ -101,10 +101,7 @@ export default function Party() {
                 <Meta title="Emerson Cloud" description="Photographer" />
               </Card>
               <Card cover={<img alt="Matthias Boland" src={matthias} />}>
-                <Meta
-                  title="Matthias Boland"
-                  description="Altar Server & Chipotle Gatherer"
-                />
+                <Meta title="Matthias Boland" description="Chipotle Gatherer" />
               </Card>
             </Space>
           </Col>
