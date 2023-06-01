@@ -32,13 +32,13 @@ const guests = [
   {
     image: matthias,
     name: "Matthias Boland",
-    description: "Bride Brother",
+    description: "Matthais is Grace's brother.",
   },
 
   {
     image: angela,
     name: "Angela Boland",
-    description: "Bride Mom",
+    description: "Grace's Mom",
   },
   {
     image: anya,
@@ -54,47 +54,47 @@ const guests = [
   {
     image: bridget,
     name: "Bridget Boland",
-    description: "",
+    description: "Grace's sister",
   },
   {
     image: emerson,
     name: "Emerson Cloud",
-    description: "",
+    description: "Russell's friend",
   },
   {
     image: grandma1,
     name: "Ms Gates",
-    description: "",
+    description: "Gate's family grandma",
   },
   {
     image: julie2,
     name: "Julie Gates",
-    description: "",
+    description: "Russell's friend",
   },
   {
     image: paul,
     name: "Paul Boland",
-    description: "",
+    description: "Grace's Dad",
   },
   {
     image: peter,
     name: "Peter Gates",
-    description: "",
+    description: "Russell's friend",
   },
   {
     image: steven2,
     name: "Steven Gates",
-    description: "",
+    description: "Russell's friend",
   },
   {
     image: sarah,
     name: "Sarah Barksdale",
-    description: "",
+    description: "Grace's friend",
   },
   {
     image: matt,
     name: "Matt Gates",
-    description: "",
+    description: "Russell's friend",
   },
   {
     image: mom,
@@ -105,57 +105,57 @@ const guests = [
   {
     image: "",
     name: "Miranda Boland",
-    description: "",
+    description: "Grace's sister",
   },
   {
     image: "",
     name: "Sebastian Boland",
-    description: "",
+    description: "Grace's brother",
   },
   {
     image: "",
     name: "Charlotte Boland",
-    description: "",
+    description: "Grace's sister",
   },
   {
     image: "",
     name: "Dominic Boland",
-    description: "",
+    description: "Grace's brother",
   },
   {
     image: "",
     name: "Betsy Galicia",
-    description: "",
+    description: "Grace's friend",
   },
   {
     image: "",
     name: "Nick A",
-    description: "",
+    description: "Grace's friend",
   },
   {
     image: "",
     name: "Caitlin Lefebvre",
-    description: "",
+    description: "Grace's friend",
   },
   {
     image: "",
     name: "Phil Lefebvre",
-    description: "",
+    description: "Grace's friend",
   },
   {
     image: "",
     name: "Kyle",
-    description: "",
+    description: "Grace's friend",
   },
   {
     image: "",
     name: "Jack Trusler",
-    description: "",
+    description: "Russell's friend",
   },
   {
     image: "",
     name: "Sam Swindel",
-    description: "",
+    description: "Russell's friend",
   },
   // Add more guest objects as needed
 ];
