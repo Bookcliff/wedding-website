@@ -1,8 +1,7 @@
 import { Layout, Row, Col, Card, Typography, List } from "antd";
 import React from "react";
 import sarah from "../pictures/sarah2.jpg";
-import kyle from "../pictures/kyle.jpg";
-import matthias from "../pictures/matthias.jpg";
+import matthias from "../pictures/m1.jpeg";
 import angela from "../pictures/angela.jpeg";
 import anya from "../pictures/anya.jpeg";
 import aron from "../pictures/aronZ.jpg";
@@ -15,6 +14,13 @@ import peter from "../pictures/peter.jpeg";
 import steven2 from "../pictures/steven2.jpeg";
 import mom from "../pictures/mom1.jpg";
 import matt from "../pictures/matt2.jpg";
+import kyle from "../pictures/kyle1.jpg";
+import Betsy from "../pictures/betsy1.jpeg";
+import charlette from "../pictures/charlette.jpeg";
+import Sebastian from "../pictures/sebastian.jpeg";
+import maranda from "../pictures/maranda.jpeg";
+import dominic from "../pictures/dominic.jpeg";
+
 import Masonry from "react-masonry-css";
 const breakpointColumnsObj = {
   default: 4,
@@ -103,27 +109,27 @@ const guests = [
       "I met Russell Sept 9, 1996.  I am his mom. The pic illustrates just one of the many special moment we shared together.  I started a relationship with Grace the summer 0f 2015.  I am amazed and proud of how their relationship has blossomed.  This day is blessed for sure.  One that Russell’s dad is watching from heaven with a huge smile on his face. Love ya both!",
   },
   {
-    image: "",
+    image: maranda,
     name: "Miranda Boland",
     description: "Grace's sister",
   },
   {
-    image: "",
+    image: Sebastian,
     name: "Sebastian Boland",
     description: "Grace's brother",
   },
   {
-    image: "",
+    image: charlette,
     name: "Charlotte Boland",
     description: "Grace's sister",
   },
   {
-    image: "",
+    image: dominic,
     name: "Dominic Boland",
     description: "Grace's brother",
   },
   {
-    image: "",
+    image: Betsy,
     name: "Betsy Galicia",
     description: "Grace's friend",
   },
