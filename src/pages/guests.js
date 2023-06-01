@@ -42,8 +42,8 @@ const guests = [
   },
   {
     image: anya,
-    name: "Mr & Ms Gates",
-    description: "Gates parents and treasured friends",
+    name: "Csilla & Istvan Gates",
+    description: "Gates' parents and treasured friends",
   },
   {
     image: aron,
@@ -63,8 +63,8 @@ const guests = [
   },
   {
     image: grandma1,
-    name: "Ms Gates",
-    description: "Gate's family grandma",
+    name: "Mrs GEczy",
+    description: "Gates' family grandma",
   },
   {
     image: julie2,
