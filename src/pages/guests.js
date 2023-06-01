@@ -17,17 +17,17 @@ import mom from "../pictures/mom1.jpg";
 import matt from "../pictures/matt2.jpg";
 import Masonry from "react-masonry-css";
 const breakpointColumnsObj = {
-  default: 6,
-  1100: 5,
-  700: 3,
-  500: 2,
+  default: 4,
+  1100: 3,
+  700: 2,
+  500: 1,
 };
 const guests = [
   {
     image: kyle,
     name: "Kyle Trusler",
     description:
-      "Kyle is a dynamic individual with a passion for coding, writing, and exploration. His work is a testament to his diverse interests, showcasing his skills in TypeScript and Svelte, and his thoughtful reflections on life, values, and travel. From Boston to Cape Town, his global adventures have shaped his worldview, enriching his understanding of different cultures. Always committed to self-improvement, Kyle's journey is one of continuous learning and growth, making him a compelling figure in the ever-evolving landscape of technology and personal development. Russell was one of his classmates in college. They were in a few classes together, including a class on parallel processing, and became friends after he and another classmate, Emerson, asked you for help with some classwork. They started spending a lot of time together, studying in various places around campus and hanging out at their dorms and houses. Grace was also part of his college friend group, which included Emerson, Russell, Steve, Julie, and others.",
+      "Kyle is a dynamic individual with a passion for coding, writing, and exploration. His work is a testament to his diverse interests, showcasing his skills in TypeScript and Svelte, and his thoughtful reflections on life, values, and travel. From Boston to Cape Town, his global adventures have shaped his worldview, enriching his understanding of different cultures. Always committed to self-improvement, Kyle's journey is one of continuous learning and growth, making him a compelling figure in the ever-evolving landscape of technology and personal development. Russell was one of his classmates in college. They were in a few classes together, including a class on parallel processing, and became friends after he and another classmate, Emerson, asked him for help with some classwork. They started spending a lot of time together, studying in various places around campus and hanging out at their dorms and houses. Grace was also part of his college friend group, which included Emerson, Russell, Steve, Julie, and others.",
   },
   {
     image: matthias,
@@ -159,6 +159,8 @@ const guests = [
   },
   // Add more guest objects as needed
 ];
+
+console.log(guests.length);
 const { Content } = Layout;
 const { Meta } = Card;
 function shuffleArray(array) {
@@ -185,7 +187,11 @@ export default function Party() {
                 key={index}
                 cover={
                   guest?.image ? (
-                    <img alt={guest.name} src={guest.image} />
+                    <img
+                      alt={guest.name}
+                      src={guest.image}
+                      style={{ width: "100%", height: "auto" }} // Increase the width as desired
+                    />
                   ) : null
                 }
                 hoverable
