@@ -12,6 +12,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Layout } from "antd";
 import MainHeader from "./components/header";
 import MainFooter from "./components/footer";
+import Guests from "./pages/guests";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -46,6 +47,16 @@ root.render(
               <>
                 <MainHeader />
                 <Party />
+                <MainFooter />
+              </>
+            }
+          />
+          <Route
+            path="/guests"
+            element={
+              <>
+                <MainHeader />
+                <Guests />
                 <MainFooter />
               </>
             }
