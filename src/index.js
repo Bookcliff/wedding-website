@@ -13,7 +13,7 @@ import { Layout } from "antd";
 import MainHeader from "./components/header";
 import MainFooter from "./components/footer";
 import Guests from "./pages/guests";
-
+import Photos from "./pages/photos";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
@@ -47,6 +47,16 @@ root.render(
               <>
                 <MainHeader />
                 <Party />
+                <MainFooter />
+              </>
+            }
+          />
+          <Route
+            path="/photos"
+            element={
+              <>
+                <MainHeader />
+                <Photos />
                 <MainFooter />
               </>
             }

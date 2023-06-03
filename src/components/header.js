@@ -10,6 +10,7 @@ const items = [
     label: <Link to="/pages/weddingInfo"> Wedding Information</Link>,
     key: "weddingInfo",
   },
+  { label: <Link to="/photos">Photos</Link>, key: "photos" },
   { label: <Link to="/party">Wedding Party</Link>, key: "party" },
   { label: <Link to="/guests">Guest List</Link>, key: "guests" },
   { label: <Link to="/registry">Registry</Link>, key: "registry" },
