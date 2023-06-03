@@ -6,7 +6,7 @@ import angela from "../pictures/angela.jpeg";
 import anya from "../pictures/anya.jpeg";
 import aron from "../pictures/aronZ.jpg";
 import bridget from "../pictures/bridget.jpeg";
-import emerson from "../pictures/emerson.jpeg";
+import emerson from "../pictures/emerson.jpg";
 import grandma1 from "../pictures/grandma1.jpeg";
 import julie2 from "../pictures/julie2.jpeg";
 import paul from "../pictures/paul.jpeg";
@@ -17,7 +17,7 @@ import matt from "../pictures/matt2.jpg";
 import kyle from "../pictures/kyle1.jpg";
 import Betsy from "../pictures/betsy1.jpeg";
 import charlette from "../pictures/charlette.jpeg";
-import Sebastian from "../pictures/sebastian.jpeg";
+import as from "../pictures/as.jpeg";
 import maranda from "../pictures/maranda.jpeg";
 import dominic from "../pictures/dominic.jpeg";
 
@@ -65,7 +65,8 @@ const guests = [
   {
     image: emerson,
     name: "Emerson Cloud",
-    description: "Russell's friend",
+    description:
+      "I met Russell when I was posing as a soccer payer with my indoor soccer shoes. I baited him into asking if I played soccer (which I don’t) and reeled him into a long term friendship.  We bonded over studying, pickup sports and seeing what we could get away with in college.",
   },
   {
     image: grandma1,
@@ -95,7 +96,8 @@ const guests = [
   {
     image: sarah,
     name: "Sarah Barksdale",
-    description: "Grace's friend",
+    description:
+      "Grace and Sarah met in 2018 while attending graduate school in Texas. They quickly bonded over their coursework and started getting lunch together outside of school. They eventually became each other’s constant pillar of support, especially during the struggles of the COVID-19 pandemic, as well as always being there for each other to celebrate huge life milestones!",
   },
   {
     image: matt,
@@ -114,9 +116,9 @@ const guests = [
     description: "Grace's sister",
   },
   {
-    image: Sebastian,
-    name: "Sebastian Boland",
-    description: "Grace's brother",
+    image: as,
+    name: "Sebastian & Alision Boland",
+    description: "Grace's brother and sister-in-law",
   },
   {
     image: charlette,
@@ -131,7 +133,8 @@ const guests = [
   {
     image: Betsy,
     name: "Betsy Galicia",
-    description: "Grace's friend",
+    description:
+      "In 2018, in the most wondrous of times, I was assigned to be Grace’s mentor. At first, I was nervous, as I deemed Grace to be a wise, intelligent, beautiful woman, what could I possibly mentor her in?! But I am so grateful for that pairing because she is indeed all of those things and more. As time progressed, Grace and I grew closer, partly because we have a pent so much time laughing and having fun together. We have also collaborated in many projects together, and she has supported some of my most unhinged ideas. Fast-forward five years of adventures, in Houston, Austin, Chicago, Mexico, and the places that are yet to come…I am beyond honored and blessed to call Grace my best friend.",
   },
   {
     image: "",
@@ -143,6 +146,7 @@ const guests = [
     name: "Caitlin Lefebvre",
     description: "Grace's friend",
   },
+
   {
     image: "",
     name: "Phil Lefebvre",
