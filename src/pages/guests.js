@@ -2,14 +2,13 @@ import { Layout, Row, Col, Card, Typography, List } from "antd";
 import React from "react";
 import sarah from "../pictures/sarah2.jpg";
 import matthias from "../pictures/m1.jpeg";
-import angela from "../pictures/angela.jpeg";
 import anya from "../pictures/anya.jpeg";
 import aron from "../pictures/aronZ.jpg";
 import bridget from "../pictures/bridget.jpeg";
 import emerson from "../pictures/emerson.jpg";
 import grandma1 from "../pictures/grandma1.jpeg";
 import julie2 from "../pictures/julie2.jpeg";
-import paul from "../pictures/paul.jpeg";
+// import paul from "../pictures/paul.jpeg";
 import peter from "../pictures/peter.jpeg";
 import steven2 from "../pictures/steven2.jpeg";
 import mom from "../pictures/mom1.jpg";
@@ -20,6 +19,10 @@ import charlette from "../pictures/charlette.jpeg";
 import as from "../pictures/as.jpeg";
 import maranda from "../pictures/maranda.jpeg";
 import dominic from "../pictures/dominic.jpeg";
+import jack from "../pictures/jack.jpg";
+import sam from "../pictures/sam.jpg";
+
+import paulang from "../pictures/paulang.jpg";
 
 import Masonry from "react-masonry-css";
 const breakpointColumnsObj = {
@@ -41,11 +44,6 @@ const guests = [
     description: "Matthais is Grace's brother.",
   },
 
-  {
-    image: angela,
-    name: "Angela Boland",
-    description: "Grace's Mom",
-  },
   {
     image: anya,
     name: "Csilla & Istvan Gates",
@@ -79,9 +77,10 @@ const guests = [
     description: "Russell's friend",
   },
   {
-    image: paul,
-    name: "Paul Boland",
-    description: "Grace's Dad",
+    image: paulang,
+    name: "Paul & Angela Boland",
+    description:
+      "We're the mother and father of the bride. We first met Russell when he lived with us for a week before moving him and Grace into an apartment for the summer between their freshman and sophomore year at Akron.",
   },
   {
     image: peter,
@@ -158,12 +157,12 @@ const guests = [
     description: "Grace's friend",
   },
   {
-    image: "",
+    image: jack,
     name: "Jack Trusler",
     description: "Russell's friend",
   },
   {
-    image: "",
+    image: sam,
     name: "Sam Swindel",
     description: "Russell's friend",
   },
