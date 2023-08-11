@@ -10,6 +10,7 @@ import Comments from "./pages/comments";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Layout } from "antd";
+import { Analytics } from "dappling-analytics/react";
 import MainHeader from "./components/header";
 import MainFooter from "./components/footer";
 import Guests from "./pages/guests";
@@ -18,6 +19,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
     <React.StrictMode>
+      <Analytics />
       <Layout style={{ minHeight: "100vh" }}>
         <Routes>
           <Route path="/" element={<App />} />
