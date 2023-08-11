@@ -58,7 +58,6 @@ root.render(
               element={
                 <>
                   <MainHeader />
-                  <Analytics />
                   <Photos />
                   <MainFooter />
                 </>
