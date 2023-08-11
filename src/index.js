@@ -20,91 +20,91 @@ root.render(
   <BrowserRouter>
     <React.StrictMode>
       <Layout style={{ minHeight: "100vh" }}>
-        <Analytics>
-          <Routes>
-            <Route path="/" element={<App />} />
-            <Route
-              path="/pages/weddingInfo"
-              element={
-                <>
-                  <MainHeader />
-                  <WeddingInfo />
-                  <MainFooter />
-                </>
-              }
-            />
-            <Route
-              path="/rsvp"
-              element={
-                <>
-                  <MainHeader />
-                  <Rsvp />
-                  <MainFooter />
-                </>
-              }
-            />
-            <Route
-              path="/party"
-              element={
-                <>
-                  <MainHeader />
-                  <Party />
-                  <MainFooter />
-                </>
-              }
-            />
-            <Route
-              path="/photos"
-              element={
-                <>
-                  <MainHeader />
-                  <Photos />
-                  <MainFooter />
-                </>
-              }
-            />
-            <Route
-              path="/guests"
-              element={
-                <>
-                  <MainHeader />
-                  <Guests />
-                  <MainFooter />
-                </>
-              }
-            />
-            <Route
-              path="/registry"
-              element={
-                <>
-                  <MainHeader />
-                  <Registry />
-                  <MainFooter />
-                </>
-              }
-            />
-            <Route
-              path="/messages"
-              element={
-                <>
-                  <MainHeader />
-                  <Comments />
-                  <MainFooter />
-                </>
-              }
-            />
-            <Route
-              path="*"
-              element={
-                <>
-                  <MainHeader />
-                  <>page does not exist</>
-                  <MainFooter />
-                </>
-              }
-            />
-          </Routes>
-        </Analytics>
+        <Routes>
+          <Route path="/" element={<App />} />
+          <Route
+            path="/pages/weddingInfo"
+            element={
+              <>
+                <MainHeader />
+                <Analytics />
+                <WeddingInfo />
+                <MainFooter />
+              </>
+            }
+          />
+          <Route
+            path="/rsvp"
+            element={
+              <>
+                <MainHeader />
+                <Analytics />
+                <Rsvp />
+                <MainFooter />
+              </>
+            }
+          />
+          <Route
+            path="/party"
+            element={
+              <>
+                <MainHeader />
+                <Party />
+                <MainFooter />
+              </>
+            }
+          />
+          <Route
+            path="/photos"
+            element={
+              <>
+                <MainHeader />
+                <Photos />
+                <MainFooter />
+              </>
+            }
+          />
+          <Route
+            path="/guests"
+            element={
+              <>
+                <MainHeader />
+                <Guests />
+                <MainFooter />
+              </>
+            }
+          />
+          <Route
+            path="/registry"
+            element={
+              <>
+                <MainHeader />
+                <Registry />
+                <MainFooter />
+              </>
+            }
+          />
+          <Route
+            path="/messages"
+            element={
+              <>
+                <MainHeader />
+                <Comments />
+                <MainFooter />
+              </>
+            }
+          />
+          <Route
+            path="*"
+            element={
+              <>
+                <MainHeader />
+                <>page does not exist</>
+                <MainFooter />
+              </>
+            }
+          />
+        </Routes>
       </Layout>
     </React.StrictMode>
   </BrowserRouter>
