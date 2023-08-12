@@ -19,6 +19,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
     <React.StrictMode>
+      <Analytics />
       <Layout style={{ minHeight: "100vh" }}>
         <Routes>
           <Route path="/" element={<App />} />
@@ -27,7 +28,6 @@ root.render(
             element={
               <>
                 <MainHeader />
-                <Analytics />
                 <WeddingInfo />
                 <MainFooter />
               </>
@@ -38,7 +38,6 @@ root.render(
             element={
               <>
                 <MainHeader />
-                <Analytics />
                 <Rsvp />
                 <MainFooter />
               </>
