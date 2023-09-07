@@ -98,7 +98,7 @@ root.render(
             element={
               <>
                 <MainHeader />
-                <>page does not exi</>
+                <>page does not ex</>
                 <MainFooter />
               </>
             }
