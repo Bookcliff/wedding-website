@@ -9,7 +9,7 @@
     "@testing-library/user-event": "^13.5.0",
     "antd": "^4.21.0",
     "craco-less": "^2.0.0",
-    "dappling-analytics": "^1.0.0",
+    "dappling-analytics": "^1.1.3",
     "mongodb": "^4.7.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
