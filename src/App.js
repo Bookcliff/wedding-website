@@ -15,7 +15,7 @@ export default function App() {
         />
         <Button className="appButton">
           <Link to="pages/weddingInfo">
-            Celebrate the marriage of Russell andAnd Grace
+            Celebrate the marriage of Russell & Grace
           </Link>
         </Button>
       </header>
